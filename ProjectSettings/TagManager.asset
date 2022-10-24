@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Tile
+  - LoseCollider
+  - SideCollider
+  - UpCollider
   layers:
   - Default
   - TransparentFX
