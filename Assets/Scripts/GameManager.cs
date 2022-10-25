@@ -23,8 +23,11 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
+        QualitySettings.vSyncCount = 1;
+        Application.targetFrameRate = 60;
+
         //Spawn tiles
-        for(int row = 0; row < tileRows; row++)
+        for (int row = 0; row < tileRows; row++)
         {
             for(int col = 0; col < tileCols; col++)
             {
@@ -45,6 +48,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
+            Time.timeScale = 1;
             SceneManager.LoadScene("Breakout");
         }
 

@@ -23,6 +23,12 @@ public class Ball : MonoBehaviour
         {
             _noCollisionFramesRemaining--;
         }
+
+        if(transform.position.x < -10f || transform.position.x > 10f ||
+            transform.position.y < -6f || transform.position.y > 6f)
+        {
+            gameManager.PlayerDied();
+        }
     }
 
     private void FixedUpdate()

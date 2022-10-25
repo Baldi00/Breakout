@@ -698,7 +698,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftButton: 276
   rightButton: 275
-  speed: 60
+  speed: 15
   movingFramesThreshold: 15
 --- !u!212 &835973587
 SpriteRenderer:
